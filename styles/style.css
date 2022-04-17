@@ -106,7 +106,8 @@ a {
 }
 
 .skills__container,
-.projects__container {
+.projects__container,
+.languages__container {
   background-color: #fafafa;
 }
 
@@ -225,6 +226,7 @@ figure {
   justify-content: space-between;
 }
 
+.job__1--3,
 .education__1--3 {
   display: flex;
   flex-direction: column;
@@ -399,4 +401,31 @@ h3 {
   height: 9px;
   transform: rotate(-90deg);
   margin-top: 3px;
+}
+
+.languages_section{
+  max-width: 1230px;
+  min-height: 536px;
+}
+
+.languages_section .center__title{
+  width: 276px;
+}
+
+.languages__parts{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.languages__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon__language{
+width: 182px;
+  height: 182px;
+  margin-bottom: 24px;
 }

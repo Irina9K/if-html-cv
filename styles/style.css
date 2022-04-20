@@ -46,7 +46,8 @@ a {
 }
 
 .nav__link:hover {
-  text-decoration: line-through;
+  /*text-decoration: line-through;*/
+  text-shadow: 2px 6px 5px #3a4576;
 }
 
 .nav {
@@ -110,10 +111,12 @@ a {
   font-weight: 500;
   margin-right: 24px;
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: scale(1.1);
+  box-shadow: 10px 5px 5px #3a4576;
 }
 
 .skills__container,
@@ -206,6 +209,10 @@ figure {
   content: "★";
 }
 
+.star__grey {
+  color: #bebebe;
+}
+
 .icon__switcher {
   position: absolute;
   width: 32px;
@@ -215,7 +222,10 @@ figure {
   transform: translate(-50%, -50%);
 }
 
-.experience__section,
+.experience__section {
+  min-height: 600px;
+}
+
 .education__section {
   max-width: 1230px;
   min-height: 903px;
@@ -237,11 +247,19 @@ figure {
   justify-content: space-between;
 }
 
+.experience__jobs .job__1--3 {
+  justify-content: flex-end;
+}
+
 .job__1--3,
 .education__1--3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.experience__jobs .job__2 {
+  align-items: flex-start;
 }
 
 .job__1,
@@ -298,11 +316,37 @@ h3 {
   width: 335px;
 }
 
+.job__2 .job__period {
+  color: #3a4576;
+}
+
+.job__1 .job__period {
+  width: 260px;
+}
+
+.education__1 .education__period,
+.education__2 .education__period {
+  width: 460px;
+}
+
+.education__2 .education__period {
+  padding-right: 20px;
+}
+
+.education__1 .education__period,
+.education__3 .education__period {
+  padding-left: 20px;
+}
+
 .job__period,
 .education__period {
   font-size: 24px;
   font-weight: 400;
   color: #bebebe;
+}
+
+.experience__jobs .line {
+  height: 360px;
 }
 
 .line {
@@ -324,19 +368,30 @@ h3 {
   color: #3a4576;
 }
 
+.job__2 .circle__2 {
+  top: 2%;
+  left: 47.56%;
+  background-color: #3a4576;
+}
+
 .circle__2 {
   top: 49%;
-  left: 49.55%;
+  left: 49.76%;
+}
+
+.job__1--3 .circle__1 {
+  top: 77%;
+  left: 47.5%;
 }
 
 .circle__1 {
   top: 72%;
-  left: 49.55%;
+  left: 49.76%;
 }
 
 .circle__3 {
-  top: 22%;
-  left: 49.55%;
+  top: 23%;
+  left: 49.76%;
   background-color: #3a4576;
   border: #3a4576;
 }
@@ -405,6 +460,7 @@ h3 {
 
 .project__next {
   text-decoration: underline;
+  color: #3a4576;
 }
 
 .project__switcher {
@@ -439,6 +495,10 @@ h3 {
   width: 182px;
   height: 182px;
   margin-bottom: 24px;
+}
+
+.footer__container {
+  height: 678px;
 }
 
 .footer__container .center__title {
@@ -478,6 +538,7 @@ h3 {
 
 .wrapper__icon a:hover {
   transform: scale(1.2);
+  text-shadow: 2px 6px 5px #bebebe;
 }
 
 .wrapper__contact {
@@ -500,4 +561,8 @@ h3 {
 .footer__contact a:nth-child(1) {
   padding-bottom: 8px;
   text-decoration: underline;
+}
+
+.footer__contact a:hover {
+  text-shadow: 2px 6px 5px #3a4576;
 }
